@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
 
-function App() {
+import Navbar from "./Navbar";
+import PricingHeader from "./PricingHeader.js";
+import Plans from "./Plans";
+import Footer from "./Footer";
+import PlanCard from "./PlanCard.js";
+import ItemList from "./itemlist.js"
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="top">
+      <h1>Triển Lãm Tranh</h1>
+      {/* <Navbar />
+      <PricingHeader />
+        <Plans />
+      <Footer /> */}
+      <ItemList />
     </div>
   );
 }
-
-export default App;

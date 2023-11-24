@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  /* 14px for mobile & tablet */
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    /* 16px for desktop */
+    font-size: 16px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: linear-gradient(
+    58.2deg,
+    rgba(40, 91, 212, 0.73) -3%,
+    rgba(171, 53, 163, 0.45) 49.3%,
+    rgba(255, 204, 112, 0.37) 97.7%
+  );
+}
+
+.pricing-header {
+  /* limit header width so that the paragraph is easier to read*/
+  max-width: 700px;
+}
+
+.container {
+  /* overwirte all max-width value smaller than 960px in all media queries
+  overwriting max-width 540 @ mw 576 & max-width 720 @ mw 768
+  roviding wider width (smaller x-margin) across tablet and dektop */
+   max-width: 960px;
+}
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  scale: 1.05;
+  border-color: #333;
+}
+
+.card-deck .card {
+  /* make sure the cards don't get too narrow */
+  min-width: 220px;
+}
+
+footer h5 {
+  text-transform: capitalize;
+}
+
+footer i > svg {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(76, 54, 113);
 }
