@@ -11,6 +11,10 @@ import Myapp from "./ProductList.js";
 import ProductList from "./ProductList.js";
 import "./App.css";
 import ListSanPham from "./Web3.js";
+import WebHeader1 from "./WebHeader.js";
+import "./web.css"
+import Middle from "./WebMiddle.js";
+import groupMembers from "./WebFooter.js";
 export default function App() {
   return (
     <div className="App" id="top">
@@ -21,7 +25,10 @@ export default function App() {
       <Footer /> */}
       {/* <ItemList /> */}
       {/* <ProductList /> */}
+      <WebHeader1 />
+      <Middle />
       <ListSanPham />
+      <groupMembers />
     </div>
   );
 }
