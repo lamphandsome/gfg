@@ -1,6 +1,5 @@
 import React from "react";
 import sanpham from "./Web1";
-import trinhbaysanpham from "./Web2";
 import Trinhbaysanpham from "./Web2";
 const ListSanPham = ()=>{
     return (
