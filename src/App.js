@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+// import "./index.css";
 
 import Navbar from "./Navbar";
 import PricingHeader from "./PricingHeader.js";
@@ -10,6 +10,7 @@ import ItemList from "./itemlist.js"
 import Myapp from "./ProductList.js";
 import ProductList from "./ProductList.js";
 import "./App.css";
+import ListSanPham from "./Web3.js";
 export default function App() {
   return (
     <div className="App" id="top">
@@ -19,7 +20,8 @@ export default function App() {
         <Plans />
       <Footer /> */}
       {/* <ItemList /> */}
-      <ProductList />
+      {/* <ProductList /> */}
+      <ListSanPham />
     </div>
   );
 }
